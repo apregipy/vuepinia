@@ -6,7 +6,6 @@ import { createPinia } from 'pinia';
 const pinia = createPinia(); // Inisialisasi pinia
 
 createApp(App)
-  .use(router)
-  .use(pinia)
+  .use(router)   // Menambahkan Vue Router
+  .use(pinia)    // Menambahkan Pinia
   .mount('#app');
-
